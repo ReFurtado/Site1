@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: 'Source Sans Pro', sans-serif;  
+}
+
+/* HOME */
+.container-menu {
+    display: -webkit-box;
+    display: -moz-box;
+    
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-menu .col {
+    height: 100%;
+    position: relative;
+}
+
+.imgRight {
+    background: #474848;
+    width: 70%;
+}
+
+.imgBack{
+    background: #3e4b64 url(imagens/background-cinza.png) no-repeat left top;
+    background-size: cover;
+    width: 30%;
+    display: block;
+    padding: 5%;
+    border-right:10px solid #fff;
+    justify-content: center;
+}
+
+.imgBack nav{
+    padding-top: 2rem;
+}
+.imgBack nav ul li{
+    line-height: 3rem;
+}
+.imgBack nav ul li a{
+    padding: 10px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.imgBack nav ul li a:hover{
+    background: #757678;
+    color: #fff;
+}
+
+
+/* FLEXSLIDER - SETAS */
+
+.flexslider {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.flexslider .slides li .mask {  
+    opacity: .6;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
+
+.flexslider .slides li {
+    position: relative;
+    height: 100vh;
+    display: none;
+    background-repeat: no-repeat;
+}
+
+.flexslider {
+    margin: 0;
+    background: #fff;
+    position: relative;
+    z-index: 0;
+    zoom: 1;
+}
+.flex-viewport {
+    max-height: 1000px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.loading .flex-viewport {
+    max-height: 300px;
+}
+.flexslider .slides {
+    zoom: 1;
+}
+/* Direction Nav */
+.flex-direction-nav {
+}
+.flex-direction-nav a {
+    width: 45px;
+    height: 60px;
+    margin: -20px 0 0;
+    display: block;
+    position: absolute;
+    top: 47%;
+    z-index: 10;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+/*setas nas imagens*/
+.flex-direction-nav .flex-next {
+    background: #fff url(imagens/seta-direita.png) no-repeat center center;
+    background-size: 100%;
+    right: 0;
+}
+.flex-direction-nav .flex-prev {
+    background: #fff url(imagens/seta-esquerda.png) no-repeat center center;
+    background-size: 100%;
+    left: 0;
+}
+.flexslider:hover .flex-next {
+    opacity: 1;
+  
+}
+.flexslider:hover .flex-prev {
+    opacity:1; 
+}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+    opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+    opacity: .3 !important;
+    filter: alpha(opacity=30);
+    cursor: default;
+}
+
+
+/* SOBRE */
+.secondSection {
+    min-height: 60vh;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.secondSection .home-sobre-img {
+    width: 500px;
+    margin-top: 8rem;
+
+}
+
+.secondSection .texto {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.secondSection h2{
+    font-weight: 400;
+    color: #444442;
+    font-size: 2rem;
+    margin-top: 8rem;
+}
+
+.secondSection p{
+    font-weight: 400;
+    color: #444442;
+    font-size: 1.2rem;
+}
+
+.secondSection .leia span{
+    text-align: center;
+    background: #545454;
+    color: #fff;
+    padding: 1px 4px 1px 8px;
+    margin-right: 10px;
+}
+/* AREAS */
+#home-areas{
+    background: #fff url("imagens/background-cinza.png") no-repeat center; 
+    background-size: cover;    
+    padding: 150px 0 100px 0;
+    position: relative;
+}
+#home-areas .dente{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -35px;
+    background: transparent url("imagens/dente.png") no-repeat center top; 
+}
+#home-areas .miolo{
+    position: relative;
+    width: 94%;
+    max-width: 1400px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+#home-areas .flex{
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px auto;
+}
+#home-areas .risco{
+    margin: 0px auto;
+    display: block;
+}
+#home-areas .item{
+    width: 20%;
+    position: relative;   
+}
+#home-areas .float{
+    padding: 20px;
+}
+#home-areas h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #030303;
+    font-size: 2rem;
+    font-weight: 500;
+}
+#home-areas h3{
+    text-align: center;
+    color: #010101;
+    padding: 13px 0;
+    margin: 16px auto;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#home-areas .item:hover .icon{    
+    transform: rotate(-5deg);
+    
+}
+#home-areas .item .icon img{
+    transform: rotate(0deg);
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin: 0px auto;
+}
+
+/* HOME - BLOG */
+#home-blog {
+    padding: 100px 0;
+    position: relative;
+}
+#home-blog .title{
+    padding-bottom: 30px;
+}
+#home-blog .title h2{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#home-blog .title p{
+    font-size: 1rem;  
+    font-weight: 400;
+    text-transform: uppercase;    
+}
+#home-blog .title p a{
+    color: #565555;
+}
+#home-blog .title *{
+    text-align: center;
+}
+
+#home-blog figure{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 15px 0;
+    position: relative;
+    z-index: 0;
+}
+
+#home-blog figure .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+}
+
+#home-blog figure .mask span{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+
+#home-blog .item:hover figure .mask, #home-blog figure:hover .mask{
+    opacity: 1;
+}
+
+#home-blog .item img{
+    width: 100%;
+    height: auto;
+    display: block;    
+    border: 1px solid #f0f0f0;
+}
+
+#home-blog .item h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#home-blog .item p{
+    text-align: justify;
+    margin: 10px 0;
+    font-size: 1rem;    
+}
+
+
+/* NEWSLETTER */
+#newsletter{
+    background: #273652 url("imagens/background-cinza.png") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 100px 0;    
+}
+
+#newsletter h5{
+    font-size:1.5rem;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+    color: #000000;
+}
+
+#newsletter p{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#newsletter h5, #newsletter p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#newsletter form{
+    text-align: center;
+}
+
+#newsletter input{
+    background: transparent;
+    width: 30%;
+    color: #000000;
+    padding: 14px;
+    border: 1px solid #030303;
+    font-size: 1.1rem;
+    margin: 8px 8px;    
+    display: inline;
+}
+
+#newsletter input[type=submit]{
+    width: 90px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+#newsletter input:focus{
+    background: #ffffff;color: #000000;
+}
+
+#newsletter ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #080808;
+}
+
+
+/* FOOTER */
+#footer{
+    padding: 80px 0;
+    margin: 10px 0;
+}
+
+#footer nav {
+    margin: 5px auto; text-align: center;
+}
+
+#footer nav ul li{
+    display: inline;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+#footer nav ul li a{
+    color: #000000;
+    text-transform: uppercase;
+    padding: 10px;
+}
+#footer nav ul li a:hover{
+    background-color: rgb(165, 163, 163);
+    color: white;
+    border-radius: 3px;
+}
+
+#footer .dados {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+
+/* Obj */
+
+ img, object, embed {
+      max-width: 100%;
+      height: auto;
+  }
+  object, embed {
+      height: 100%;
+  }
+  img {
+      -ms-interpolation-mode: bicubic;
+  }
+
+  /* Grid HTML Classes */
+  .row {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1150px;
+  }
+
+  .row:before, .row:after {
+      content: " ";
+      display: table;
+  }
+
+  .row:after {
+      clear: both;
+  }
+ 
+  .row .row.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none;
+  }
+
+  .column, .columns {
+      position: relative;
+      padding-left: 0.9375em;
+      padding-right: 0.9375em;
+      width: 100%;
+      float: left;
+      justify-content: flex-start;
+      vertical-align: top;
+  }
+  [class*="column"] + [class*="column"]:last-child {
+      float: right;
+  }
+  [class*="column"] + [class*="column"].end {
+      float: left;
+  }
+  .large-1 {
+      position: relative;
+      width: 6.25%;
+  }
+  .large-2 {
+      position: relative;
+      width: 12.5%;
+  }
+  .large-3 {
+      position: relative;
+      width: 18.75%;
+  }
+  .large-3col {
+      position: relative;
+      width: 33%;
+      min-width: 33%;
+      max-width: 33%;
+  }
+  .large-4 {
+      position: relative;
+      width: 25%;
+  }
+  .large-5 {
+      position: relative;
+      width: 31.25%;
+  }
+  .large-6 {
+      position: relative;
+      width: 37.5%;
+  }
+  .large-7 {
+      position: relative;
+      width: 43.75%;
+  }
+  .large-8 {
+      position: relative;
+      width: 50%;
+  }
+  .large-9 {
+      position: relative;
+      width: 56.25%;
+  }
+  .large-10 {
+      position: relative;
+      width: 62.5%;
+  }
+
+  
+  
+  
+
+      
